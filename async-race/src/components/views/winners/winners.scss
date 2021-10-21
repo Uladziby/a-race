@@ -1,0 +1,31 @@
+.container_winners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.table{
+    
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+
+    &_header{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        flex-direction: row;
+        font-size: 20px;   
+        text-transform: capitalize;     
+        color: white;
+        justify-content: space-around;
+       
+    }
+
+
+}
+
+.winners-row{
+    display: flex;
+    color: white;
+}

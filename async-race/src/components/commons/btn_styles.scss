@@ -1,0 +1,57 @@
+@mixin btn {
+  background: none;
+  border: 2px solid;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 621 1rem "Roboto Slab", sans-serif;
+  padding: 0.3em 0.3em;
+  letter-spacing: 0.05rem;
+  color: white;
+  margin: 0.5rem;
+}
+
+.btnDelete {
+  @include btn;
+
+  &:focus {
+    outline: 2px dotted #55d7dc;
+  }
+}
+.btnStart ,
+.btnStop 
+{
+  @include btn;
+  font-size: 0.5rem;
+  border-radius: 100%;
+  &:focus {
+    outline: 2px dotted #55d7dc;
+  }
+}
+.btnStart:hover,
+.btnStop:hover ,
+.btnDelete:hover
+ {
+  transform: scale(1.1);
+  color: grey;
+}
+
+.btnPanel,
+.btnCreateCar,
+.btnGenerate,
+.btnRaceMode {
+  @include btn;
+
+  width: 8rem;
+  height: 3rem;
+}
+
+.btnPanel:hover,
+.btnCreateCar:hover,
+.btnGenerate:hover,
+.btnRaceMode:hover {
+  transform: scale(1.1);
+}
+
+.disabled{
+  color:grey;
+}

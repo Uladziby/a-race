@@ -1,0 +1,42 @@
+#app {
+  
+    height: 100vh;
+    width: 95vw;
+}
+
+body{
+    background-color: khaki;
+}
+@mixin btn_nav {
+    background: none;
+    border: 2px solid;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 621 1rem "Roboto Slab", sans-serif;
+    padding: 0.3em 0.3em;
+    letter-spacing: 0.05rem;
+    color: grey;
+    margin: 0.5rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    &_link-garage{
+       @include btn_nav;
+    }
+    &_link-winners{
+        @include btn_nav;
+    }
+    &_link-garage:hover,
+    &_link-winners:hover{
+        color: white;
+    }
+
+}
+
+.activate{
+    color: white;
+    transform: scale(0.9);
+}

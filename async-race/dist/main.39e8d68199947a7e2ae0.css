@@ -1,0 +1,162 @@
+.container_winners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.table {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  width: 100%; }
+  .table_header {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    flex-direction: row;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    justify-content: space-around; }
+
+.winners-row {
+  display: flex;
+  color: white; }
+
+.btnDelete {
+  background: none;
+  border: 2px solid;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 621 1rem "Roboto Slab", sans-serif;
+  padding: 0.3em 0.3em;
+  letter-spacing: 0.05rem;
+  color: white;
+  margin: 0.5rem; }
+  .btnDelete:focus {
+    outline: 2px dotted #55d7dc; }
+
+.btnStart,
+.btnStop {
+  background: none;
+  border: 2px solid;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 621 1rem "Roboto Slab", sans-serif;
+  padding: 0.3em 0.3em;
+  letter-spacing: 0.05rem;
+  color: white;
+  margin: 0.5rem;
+  font-size: 0.5rem;
+  border-radius: 100%; }
+  .btnStart:focus,
+  .btnStop:focus {
+    outline: 2px dotted #55d7dc; }
+
+.btnStart:hover,
+.btnStop:hover,
+.btnDelete:hover {
+  transform: scale(1.1);
+  color: grey; }
+
+.btnPanel,
+.btnCreateCar,
+.btnGenerate,
+.btnRaceMode {
+  background: none;
+  border: 2px solid;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 621 1rem "Roboto Slab", sans-serif;
+  padding: 0.3em 0.3em;
+  letter-spacing: 0.05rem;
+  color: white;
+  margin: 0.5rem;
+  width: 8rem;
+  height: 3rem; }
+
+.btnPanel:hover,
+.btnCreateCar:hover,
+.btnGenerate:hover,
+.btnRaceMode:hover {
+  transform: scale(1.1); }
+
+.disabled {
+  color: grey; }
+
+.garage_container {
+  margin: 1rem; }
+  .garage_container__panel {
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-around; }
+
+.garage_container__listCars-car {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  flex-wrap: wrap;
+  width: 100%; }
+  .garage_container__listCars-car .car_property {
+    width: 20%; }
+  .garage_container__listCars-car .raceField {
+    display: flex;
+    justify-content: space-between;
+    transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+    width: 100%;
+    height: 2rem;
+    background-color: grey; }
+    .garage_container__listCars-car .raceField img {
+      width: 2rem;
+      height: 2rem;
+      transform: translate(0, 230); }
+    .garage_container__listCars-car .raceField_Car {
+      width: 2.1rem; }
+      .garage_container__listCars-car .raceField_Car svg {
+        transform: rotateY(180deg); }
+
+.area_cars {
+  font-size: 0.8rem; }
+
+#btn_go:hover {
+  color: #960e0e; }
+
+#app {
+  height: 100vh;
+  width: 95vw; }
+
+body {
+  background-color: khaki; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 10%; }
+  .header_link-garage {
+    background: none;
+    border: 2px solid;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 621 1rem "Roboto Slab", sans-serif;
+    padding: 0.3em 0.3em;
+    letter-spacing: 0.05rem;
+    color: grey;
+    margin: 0.5rem; }
+  .header_link-winners {
+    background: none;
+    border: 2px solid;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 621 1rem "Roboto Slab", sans-serif;
+    padding: 0.3em 0.3em;
+    letter-spacing: 0.05rem;
+    color: grey;
+    margin: 0.5rem; }
+  .header_link-garage:hover, .header_link-winners:hover {
+    color: white; }
+
+.activate {
+  color: white;
+  transform: scale(0.9); }
+
